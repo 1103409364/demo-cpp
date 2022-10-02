@@ -27,11 +27,12 @@
 //   cout << a8 << "\n";                        // 0x16fdff1b3
 //   cin.get();
 // }
-#include <iostream>
 #include "../include/Log.h"
+#include <iostream>
 using namespace std;
 
 int main() {
   testPointer();
+  testReference();
   cin.get();
 }
