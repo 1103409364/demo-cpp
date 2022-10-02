@@ -31,5 +31,4 @@
 *.out
 *.app
 .DS_Store
-*.dSYM
-Main
+out
