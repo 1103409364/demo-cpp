@@ -32,7 +32,6 @@
 using namespace std;
 
 int main() {
-  int a = 111;
-  Log("Hello World.");
+  testPointer();
   cin.get();
 }

@@ -9,5 +9,6 @@
 #define _LOG_H
 
 void Log(const char* message);
+void testPointer();
 
 #endif
