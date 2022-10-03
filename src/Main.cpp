@@ -32,7 +32,9 @@
 using namespace std;
 
 int main() {
-  testPointer();
-  testReference();
+  // testPointer();
+  // testReference();
+  testStatic();
+  testStatic();
   cin.get();
 }
