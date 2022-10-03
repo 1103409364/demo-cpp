@@ -5,7 +5,8 @@ using namespace std;
 
 class Entity2 {
 public:
-  virtual void showName() { cout << "Entity2" << endl; };
+  // virtual void showName() { cout << "Entity2" << endl; };
+  virtual void showName() = 0; // 纯虚函数：无方法体加 = 0，必须在子类中实现
 };
 
 class Player2 : public Entity2 {
@@ -26,7 +27,8 @@ void printName(Entity2 *e) {
 }
 
 void testVirtualFun() {
-  Entity2 *e = new Entity2();
+  // 改为纯虚函数后报错：Allocating an object of abstract class type 'Entity2'
+  // Entity2 *e = new Entity2();
   printName(e); // Entity2
   Player2 *p = new Player2("p");
   p->showName(); // p
@@ -36,8 +38,10 @@ void testVirtualFun() {
   // v表就是一个表，它包含基类中所有虚函数的映射，这样我们可以在它运行时，
   // 如果你想覆写一个函数将它们映射到正确的重写(override)函数,
   // 必须将基类中的基函数标记为虚函数
-  Entity2 p2 = *p;
-  p2.showName(); // Entity2
+
+  // 改为纯虚函数后报错：Variable type 'Entity2' is an abstract class
+  // Entity2 p2 = *p;
+  // p2.showName(); // Entity2
   Entity2 *p3 = new Player2("p");
   p3->showName(); // p
 }
