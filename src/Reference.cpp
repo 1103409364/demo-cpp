@@ -1,4 +1,4 @@
-#include "../include/Log.h"
+#include "../include/common.h"
 #include <iostream>
 
 // 入参 使用指针
