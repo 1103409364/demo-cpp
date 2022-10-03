@@ -12,4 +12,5 @@ void Log(const char *message);
 void testPointer();
 void testReference();
 void testStatic();
+void testClass();
 // #endif

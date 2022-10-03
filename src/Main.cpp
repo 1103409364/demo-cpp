@@ -34,7 +34,8 @@ using namespace std;
 int main() {
   // testPointer();
   // testReference();
-  testStatic();
-  testStatic();
+  // testStatic();
+  // testStatic();
+  testClass();
   cin.get();
 }
