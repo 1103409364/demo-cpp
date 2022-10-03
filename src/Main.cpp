@@ -38,6 +38,7 @@ int main() {
   // testStatic();
   // testClass();
   // testEnum();
-  testConstructor();
+  // testConstructor();
+  testInheritance();
   cin.get();
 }

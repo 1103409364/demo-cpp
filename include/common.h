@@ -15,4 +15,5 @@ void testStatic();
 void testClass();
 void testEnum();
 void testConstructor();
+void testInheritance();
 // #endif
