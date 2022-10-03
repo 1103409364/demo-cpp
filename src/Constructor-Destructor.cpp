@@ -12,6 +12,10 @@ public:
     this->x = x; // private 成员需要用 this 访问
     y = x;
   };
+  ~Entity() {
+    // 控制台打印了两次
+    std::cout << "call Destructor" << std::endl;
+  };
   float getX() {
     // return this->x
     // return (*this).x;
