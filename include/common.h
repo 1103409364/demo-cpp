@@ -14,4 +14,5 @@ void testReference();
 void testStatic();
 void testClass();
 void testEnum();
+void testConstructor();
 // #endif

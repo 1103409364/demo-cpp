@@ -37,6 +37,7 @@ int main() {
   // testStatic();
   // testStatic();
   // testClass();
-  testEnum();
+  // testEnum();
+  testConstructor();
   cin.get();
 }
