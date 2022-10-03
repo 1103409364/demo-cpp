@@ -1,12 +1,19 @@
 
 #include <iostream>
 #include <ostream>
+#include <string>
 using namespace std;
-
-class Entity2 {
+// 打印类名接口
+class Printable {
+public:
+  virtual void showClassName() = 0;
+};
+// 不加 public 报错：Implicitly declared private here 在这里隐式声明为私有
+class Entity2 : public Printable {
 public:
   // virtual void showName() { cout << "Entity2" << endl; };
   virtual void showName() = 0; // 纯虚函数：无方法体加 = 0，必须在子类中实现
+  void showClassName() override { cout << "Entity2" << endl; };
 };
 
 class Player2 : public Entity2 {
@@ -18,6 +25,7 @@ public:
   Player2(const string &name) : m_name(name) {}
   // 'override' keyword is a C++11 extension
   void showName() override { cout << m_name << endl; };
+  void showClassName() override { cout << "Player" << endl; };
 };
 // 形参为指针，虚调用才会有这种多态效果。
 void printName(Entity2 *e) {
@@ -26,11 +34,16 @@ void printName(Entity2 *e) {
   e->showName(); // Entity
 }
 
+// 打印类名
+void Print(Printable *obj) { obj->showClassName(); }
+
 void testVirtualFun() {
   // 改为纯虚函数后报错：Allocating an object of abstract class type 'Entity2'
   // Entity2 *e = new Entity2();
-  printName(e); // Entity2
+  // printName(e); // Entity2
   Player2 *p = new Player2("p");
+  Print(p);
+
   p->showName(); // p
   printName(p);  // Entity2 使用虚函数后 打印 p
   // 使用多态时导致问题。这就是虚函数的使用场景，虚函数引入了一种叫做Dynamic
