@@ -39,6 +39,7 @@ int main() {
   // testClass();
   // testEnum();
   // testConstructor();
-  testInheritance();
+  // testInheritance();
+  testVirtualFun();
   cin.get();
 }

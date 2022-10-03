@@ -16,4 +16,5 @@ void testClass();
 void testEnum();
 void testConstructor();
 void testInheritance();
+void testVirtualFun();
 // #endif
