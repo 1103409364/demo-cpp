@@ -13,4 +13,5 @@ void testPointer();
 void testReference();
 void testStatic();
 void testClass();
+void testEnum();
 // #endif
