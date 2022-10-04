@@ -27,7 +27,7 @@ struct Vector2 {
 };
 
 // 重载左移运算符 << 打印 Vector2 对象，如同在 java 中重写 toString
-// << 接收两个参数
+// << 接收两个参数运算符左边和右边的操作数，返回 ostream 引用
 std::ostream &operator<<(std::ostream &stream, const Vector2 &other) {
   return stream << other.x << ", " << other.y;
 }
