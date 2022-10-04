@@ -12,7 +12,9 @@ private:
   mutable int var;
 
 public:
-  // const 这个方法不会修改任何实际的类，因此您可以看到我们不能修改类成员变量
+  Entity1004() { cout << "Create Entity" << endl; };
+  // const
+  // 这个方法不会修改任何实际的类，因此您可以看到我们不能修改类成员变量
   int GetX() const {
     // error: Member function 'Entity1004::GetX' is declared const here
     // m_X = 1;
@@ -45,4 +47,6 @@ void testConst() {
   cout << *a1 << endl; // 0
   cout << *a3 << endl; // 0
   // 在类中使用 const
+  const Entity1004 e; // const 实例化 必须提供默认构造
+  e.GetX();
 }
