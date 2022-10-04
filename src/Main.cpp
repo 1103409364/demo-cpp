@@ -40,6 +40,7 @@ int main() {
   // testEnum();
   // testConstructor();
   // testInheritance();
-  testVirtualFun();
+  // testVirtualFun();
+  testString();
   cin.get();
 }

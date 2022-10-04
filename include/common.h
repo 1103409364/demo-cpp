@@ -17,4 +17,5 @@ void testEnum();
 void testConstructor();
 void testInheritance();
 void testVirtualFun();
+void testString();
 // #endif
