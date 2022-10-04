@@ -18,4 +18,5 @@ void testConstructor();
 void testInheritance();
 void testVirtualFun();
 void testString();
+void testConst();
 // #endif

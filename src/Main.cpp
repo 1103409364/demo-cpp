@@ -41,6 +41,7 @@ int main() {
   // testConstructor();
   // testInheritance();
   // testVirtualFun();
-  testString();
-  cin.get();
+  // testString();
+  testConst();
+  // cin.get(); // 执行完不退出
 }
