@@ -27,7 +27,8 @@ public:
 void testConstructor() {
   // Entity e1;
   Entity e2(1.1f);
-  Entity e3 = *new Entity(1.1f);
+  Entity e3 = *new Entity(1.1f); // 解引用 new 返回的是指针
+  Entity *e4 = new Entity(1.1f);
   float f = e2.getX();
   std::cout << e2.getX() << std::endl;
   std::cout << e3.getX() << std::endl;
