@@ -42,6 +42,7 @@ int main() {
   // testInheritance();
   // testVirtualFun();
   // testString();
-  testConst();
+  // testConst();
+  testOperatorOverloading();
   // cin.get(); // 执行完不退出
 }

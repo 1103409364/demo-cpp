@@ -19,4 +19,5 @@ void testInheritance();
 void testVirtualFun();
 void testString();
 void testConst();
+void testOperatorOverloading();
 // #endif
