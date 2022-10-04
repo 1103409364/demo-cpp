@@ -43,6 +43,7 @@ int main() {
   // testVirtualFun();
   // testString();
   // testConst();
-  testOperatorOverloading();
+  // testOperatorOverloading();
+  testThis();
   // cin.get(); // 执行完不退出
 }

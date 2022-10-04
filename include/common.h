@@ -20,4 +20,5 @@ void testVirtualFun();
 void testString();
 void testConst();
 void testOperatorOverloading();
+void testThis();
 // #endif
