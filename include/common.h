@@ -23,4 +23,5 @@ void testOperatorOverloading();
 void testThis();
 void testScopePointer();
 void testSmartPointer();
+void testCopy();
 // #endif

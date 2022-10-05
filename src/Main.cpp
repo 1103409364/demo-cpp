@@ -46,6 +46,7 @@ int main() {
   // testOperatorOverloading();
   // testThis();
   // testScopePointer();
-  testSmartPointer();
+  // testSmartPointer();
+  testCopy();
   // cin.get(); // 执行完不退出
 }
