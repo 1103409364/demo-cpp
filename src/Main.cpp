@@ -41,11 +41,11 @@ int main() {
   // testConstructor();
   // testInheritance();
   // testVirtualFun();
-  testString();
+  // testString();
   // testConst();
   // testOperatorOverloading();
   // testThis();
-  // testScopePointer();
+  testScopePointer();
   // testSmartPointer();
   // testCopy();
   // cin.get(); // 执行完不退出
