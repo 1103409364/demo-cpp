@@ -48,6 +48,7 @@ int main() {
   // testScopePointer();
   // testSmartPointer();
   // testCopy();
+  // testArrowOperator();
+  testVector();
   // cin.get(); // 执行完不退出
-  testArrowOperator();
 }
