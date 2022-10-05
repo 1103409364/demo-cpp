@@ -24,4 +24,5 @@ void testThis();
 void testScopePointer();
 void testSmartPointer();
 void testCopy();
+void testArrowOperator();
 // #endif
