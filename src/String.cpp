@@ -31,7 +31,7 @@ public:
     // 复制后，第二次触发析构报错：SIGABRT pointer being
     // freed was not allocated 浅拷贝 使用相同的 buffer 缓冲区
     // 导致第二次 delete 企图释放已释放的内存，报错
-    // 解决方式：拷贝构造函数
+    // 解决方式：自定义拷贝构造函数使用深拷贝
     delete[] m_Buffer;
   }
   // 使用友元访问私有成员
