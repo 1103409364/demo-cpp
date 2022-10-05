@@ -21,4 +21,5 @@ void testString();
 void testConst();
 void testOperatorOverloading();
 void testThis();
+void testScopePointer();
 // #endif
