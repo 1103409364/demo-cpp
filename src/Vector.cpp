@@ -3,6 +3,16 @@
 #include <vector>
 struct Vertex {
   float x, y, z;
+  Vertex(float x, float y, float z) : x(x), y(y), z(z) {}
+  // 自定义 constructor 拷贝函数，覆盖默认的。观察拷贝
+  Vertex(const Vertex &vertex) : x(vertex.x), y(vertex.y), z(vertex.z) {
+    // 第一次copy：当我们创建vertex时，实际上是在当前函数的当前栈帧中构造它，然后从当前函数中把它放到实际的vector分配的内存中
+    // 优化：直接在vector的实际内存中创建元素 push_back 改用 emplace_back。
+    // 区别：push_back 需要传健好之后放入，emplace_back 传参不用预先创建
+    // vector默认分配容量1，每次重新分配只加1，造成了更多次的copy。
+    // 优化：初始化需要的容量 vertices(int size) 或者 vertices.reserve(int size)
+    std::cout << "Copied!" << std::endl; // 3次 Copied ! 优化后 0 copy
+  }
 };
 // 重载 << 运算符，便于打印，类似其他语言重写 toString() 打印对象
 std::ostream &operator<<(std::ostream &stream, const Vertex &vertex) {
@@ -23,10 +33,10 @@ void testVector() {
   // 动态数组 vector 在内存上是连续的。
   // vector 的访问和普通数组类似，可以通过下标访问
   std::vector<Vertex> vertices;
-  // 直接 push 报错：Expected expression。中间变量 v 接一下，报错消失
-  vertices.push_back({1.0f, 2.0f, 3.0f});
-  Vertex v = {4.0f, 5.0f, 6.0f};
-  vertices.push_back(v);
+  vertices.reserve(3);            // 预设容量，减少 copy
+  vertices.emplace_back(1, 2, 3); // push_back(Vertex(1.0f, 2.0f, 3.0f));
+  vertices.emplace_back(4, 5, 4);
+  vertices.emplace_back(7.0f, 8.0f, 9.0f);
   // 使用引用避免复制数据
   printVector(vertices);
   std::cout << "=======" << std::endl;
