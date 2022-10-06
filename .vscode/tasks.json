@@ -5,13 +5,15 @@
       "label": "C/C++: clang++ 生成活动文件", //和launch.josn 中的 preLaunchTask 必须一样
       "command": "/usr/bin/clang++",
       "args": [
+        "-std=c++17", //使用c++17标准编译
+        "-I${workspaceFolder}/include",
+        "-I${workspaceFolder}/dependencies/GLFW/include",
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-g", //生成和调试有关的信息
         "${workspaceFolder}/src/*.cpp", // 当前工作空间下文件夹 src 目录名下的所有cpp文件。 source对应工程目录下的source文件夹名字，可自行修改
         "-o", // -E 可以显示预处理后的结果
-        "${workspaceFolder}/out/${fileBasenameNoExtension}", //指定输出的文件名为out，默认a.exe。out对应工程目录下的out文件夹名字，可自行修改
-        "-std=c++17" //使用c++17标准编译\
+        "${workspaceFolder}/out/${fileBasenameNoExtension}" //指定输出的文件名为out，默认a.exe。out对应工程目录下的out文件夹名字，可自行修改
         // "-finput-charset=UTF-8" //输入编译器默认文本编码 默认为utf-8
       ],
       "options": {

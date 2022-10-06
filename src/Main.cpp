@@ -27,7 +27,7 @@
 //   cout << a8 << "\n";                        // 0x16fdff1b3
 //   cin.get();
 // }
-#include "../include/common.h"
+#include "common.h"
 #include <iostream>
 using namespace std;
 
