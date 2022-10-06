@@ -27,4 +27,5 @@ void testCopy();
 void testArrowOperator();
 void testVector();
 void testUsingLibraries();
+void testTemplate();
 // #endif

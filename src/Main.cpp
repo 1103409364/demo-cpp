@@ -48,6 +48,7 @@ int main() {
   // testCopy();
   // testArrowOperator();
   // testVector();
-  testUsingLibraries();
+  // testUsingLibraries();
+  testTemplate();
   // cin.get(); // 执行完不退出
 }
