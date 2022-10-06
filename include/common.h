@@ -26,4 +26,5 @@ void testSmartPointer();
 void testCopy();
 void testArrowOperator();
 void testVector();
+void testUsingLibraries();
 // #endif

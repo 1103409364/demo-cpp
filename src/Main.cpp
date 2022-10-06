@@ -1,5 +1,4 @@
 // #include <iostream>
-// using namespace std;
 
 // int main() {
 //   int a = 'A';
@@ -29,7 +28,6 @@
 // }
 #include "common.h"
 #include <iostream>
-using namespace std;
 
 int main() {
   // testPointer();
@@ -49,6 +47,7 @@ int main() {
   // testSmartPointer();
   // testCopy();
   // testArrowOperator();
-  testVector();
+  // testVector();
+  testUsingLibraries();
   // cin.get(); // 执行完不退出
 }

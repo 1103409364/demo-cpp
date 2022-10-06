@@ -7,7 +7,15 @@
       "args": [
         "-std=c++17", //使用c++17标准编译
         "-I${workspaceFolder}/include",
-        "-I${workspaceFolder}/dependencies/GLFW/include",
+        "-I${workspaceFolder}/dependencies/GLFW/include", // 库头
+        "-L${workspaceFolder}/dependencies/GLFW/lib-arm64", // 库所在目录
+        "-lglfw3", // 库名称
+        "-framework", // 如果您使用的是 GLFW 的静态库版本，请将其和 Cocoa、OpenGL 和 IOKit 框架作为依赖项添加到项目中。它们都可以在 /System/Library/Frameworks 中找到。https://www.glfw.org/docs/latest/build.html
+        "Cocoa",
+        "-framework",
+        "OpenGL",
+        "-framework",
+        "IOKit",
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-g", //生成和调试有关的信息
