@@ -67,5 +67,27 @@
     "vector": "cpp",
     "algorithm": "cpp"
   },
-  "cSpell.words": ["glfw", "powerup"]
+  "cSpell.words": ["glfw", "powerup"],
+  "clangd.onConfigChanged": "restart",
+  // Clangd 运行参数(在终端/命令行输入 clangd --help-list-hidden 可查看更多)
+  "clangd.arguments": [],
+  "clangd.fallbackFlags": [
+    "-std=c++17",
+    "-I${workspaceFolder}/include",
+    "-L${workspaceFolder}/dependencies/GLFW/lib-arm64",
+    "--log=verbose",
+    "--pretty",
+    "--all-scopes-completion",
+    "--completion-style=bundled",
+    "--cross-file-rename",
+    "--header-insertion=iwyu",
+    "--header-insertion-decorators",
+    "--background-index",
+    "--clang-tidy",
+    "--clang-tidy-checks=cppcoreguidelines-*,performance-*,bugprone-*,portability-*,modernize-*,google-*",
+    "--j=2",
+    "--pch-storage=disk",
+    "--function-arg-placeholders=false",
+    "--compile-commands-dir=build"
+  ]
 }
