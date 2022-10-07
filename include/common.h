@@ -8,7 +8,6 @@
 // #ifndef _LOG_H // if not define 头文件保护符
 // #define _LOG_H
 #define PR_DEBUG 1 // 定义环境变量。1 开启 debug
-
 void Log(const char *message);
 void testPointer();
 void testReference();
@@ -31,4 +30,5 @@ void testUsingLibraries();
 void testTemplate();
 void testMacro();
 void testAuto();
+void testArray();
 // #endif

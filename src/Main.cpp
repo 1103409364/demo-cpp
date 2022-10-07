@@ -51,6 +51,7 @@ int main() {
   // testUsingLibraries();
   // testTemplate();
   // testMacro();
-  testAuto();
+  // testAuto();
+  testArray();
   // cin.get(); // 执行完不退出
 }
