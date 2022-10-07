@@ -52,6 +52,7 @@ int main() {
   // testTemplate();
   // testMacro();
   // testAuto();
-  testArray();
+  // testArray();
+  testFunctionPointer();
   // cin.get(); // 执行完不退出
 }

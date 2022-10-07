@@ -31,4 +31,5 @@ void testTemplate();
 void testMacro();
 void testAuto();
 void testArray();
+void testFunctionPointer();
 // #endif
