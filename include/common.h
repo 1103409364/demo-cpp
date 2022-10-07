@@ -30,4 +30,5 @@ void testVector();
 void testUsingLibraries();
 void testTemplate();
 void testMacro();
+void testAuto();
 // #endif

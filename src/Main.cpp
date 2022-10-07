@@ -50,6 +50,7 @@ int main() {
   // testVector();
   // testUsingLibraries();
   // testTemplate();
-  testMacro();
+  // testMacro();
+  testAuto();
   // cin.get(); // 执行完不退出
 }
