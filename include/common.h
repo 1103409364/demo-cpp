@@ -7,6 +7,7 @@
 // 另一种方式使用条件编译。没有 #pragma once 简洁
 // #ifndef _LOG_H // if not define 头文件保护符
 // #define _LOG_H
+#define PR_DEBUG 1 // 定义环境变量。1 开启 debug
 
 void Log(const char *message);
 void testPointer();
@@ -28,4 +29,5 @@ void testArrowOperator();
 void testVector();
 void testUsingLibraries();
 void testTemplate();
+void testMacro();
 // #endif
