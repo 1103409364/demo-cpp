@@ -32,4 +32,5 @@ void testMacro();
 void testAuto();
 void testArray();
 void testFunctionPointer();
+void testThread();
 // #endif

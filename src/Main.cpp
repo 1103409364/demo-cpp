@@ -53,6 +53,7 @@ int main() {
   // testMacro();
   // testAuto();
   // testArray();
-  testFunctionPointer();
+  // testFunctionPointer();
+  testThread();
   // cin.get(); // 执行完不退出
 }
