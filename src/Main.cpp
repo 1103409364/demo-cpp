@@ -54,6 +54,7 @@ int main() {
   // testAuto();
   // testArray();
   // testFunctionPointer();
-  testThread();
+  // testThread();
+  testTimer();
   // cin.get(); // 执行完不退出
 }

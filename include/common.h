@@ -33,4 +33,5 @@ void testAuto();
 void testArray();
 void testFunctionPointer();
 void testThread();
+void testTimer();
 // #endif
