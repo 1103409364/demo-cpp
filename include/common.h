@@ -34,4 +34,5 @@ void testArray();
 void testFunctionPointer();
 void testThread();
 void testTimer();
+void testMultiArray();
 // #endif
