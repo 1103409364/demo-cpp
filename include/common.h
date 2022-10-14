@@ -35,4 +35,5 @@ void testFunctionPointer();
 void testThread();
 void testTimer();
 void testMultiArray();
+void testSort();
 // #endif

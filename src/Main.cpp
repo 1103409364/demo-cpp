@@ -56,6 +56,7 @@ int main() {
   // testFunctionPointer();
   // testThread();
   // testTimer();
-  testMultiArray();
+  // testMultiArray();
+  testSort();
   // cin.get(); // 执行完不退出
 }
