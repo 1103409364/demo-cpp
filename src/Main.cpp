@@ -57,6 +57,7 @@ int main() {
   // testThread();
   // testTimer();
   // testMultiArray();
-  testSort();
+  // testSort();
+  testTypePunning();
   // cin.get(); // 执行完不退出
 }

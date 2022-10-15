@@ -36,4 +36,5 @@ void testThread();
 void testTimer();
 void testMultiArray();
 void testSort();
+void testTypePunning();
 // #endif
