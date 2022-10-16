@@ -37,4 +37,5 @@ void testTimer();
 void testMultiArray();
 void testSort();
 void testTypePunning();
+void testUnion();
 // #endif
