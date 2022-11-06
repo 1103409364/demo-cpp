@@ -38,4 +38,5 @@ void testMultiArray();
 void testSort();
 void testTypePunning();
 void testUnion();
+void testMemoryAllocations();
 // #endif

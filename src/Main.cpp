@@ -59,6 +59,7 @@ int main() {
   // testMultiArray();
   // testSort();
   // testTypePunning();
-  testUnion();
+  // testUnion();
+  testMemoryAllocations();
   // cin.get(); // 执行完不退出
 }
