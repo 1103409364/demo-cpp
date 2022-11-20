@@ -16,7 +16,7 @@
       "externalConsole": false, //调试时是否显示外置控制台窗口（大黑框），一般设置为true显示控制台
       "MIMode": "lldb", // VSCode要使用的调试工具or指示VS代码将连接到的调试器
       "preLaunchTask": "C/C++: clang++ 生成活动文件", // 调试开始前执行的任务，一般为编译程序，这个名字一定要跟tasks.json中的label一致
-      "targetArchitecture": "arm64" // 被调试者的架构。未设置将自动检测（自动检测有问题）。允许的值为 x86、arm、arm64、mips、x64、amd64、x86_64。https://github.com/microsoft/vscode-cpptools/issues/2376
+      "targetArchitecture": "x64" // 被调试者的架构。未设置将自动检测（自动检测有问题）。允许的值为 x86、arm、arm64、mips、x64、amd64、x86_64。https://github.com/microsoft/vscode-cpptools/issues/2376
       // "internalConsoleOptions": "neverOpen" //可以没有
       // "miDebuggerPath": "C:\\Program Files\\mingw64\\bin\\gdb.exe", // miDebugger的路径，注意这里要与MinGw的路径对应 当未指定时，它将搜索操作系统的PATH变量来寻找调试器
       // "setupCommands": [
